@@ -67,8 +67,9 @@ par(mar = c(5,5,4,2))
 png('plot6.png', width = 480, height = 480, units = "px")
 ggplot(emissions_from_vehicles, aes(year, total_emissions, color = fips)) +
         geom_line(stat = "summary", fun.y = "sum", lwd = 2) +
-        ggtitle("Total Vehicle Emissions in Baltimore and Los Angeles County") +
-        labs(x = "Year", y = "Emissions in kilotons")
+        ggtitle("Total Vehicle Emissions\nLos Angeles County (06037) and Baltimore (24510)") +
+        labs(x = "Year", y = "Emissions in kilotons") +
+        theme_bw()
 
 ## write the plot into an PNG file
 dev.off()

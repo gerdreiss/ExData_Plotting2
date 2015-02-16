@@ -45,10 +45,10 @@ total_emissions_by_year <-
 
 ## plot the emissions
 par(mar = c(5,7,4,2)) ## extra margin to accommodate tick labs
+png('plot1.png', width = 480, height = 480, units = "px")
 barplot(total_emissions_by_year[2, ], main = "Total Emissions by Year", xlab = "Year", ylab = "Emissions in megatons",  
         ylim = c(0, max(total_emissions_by_year[2, ])), las = 1, names.arg = total_emissions_by_year[1,])
 
 ## write the plot into an PNG file
-dev.copy(png,'plot1.png')
 dev.off()
 
