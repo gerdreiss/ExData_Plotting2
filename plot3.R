@@ -1,5 +1,5 @@
 ########################################################################################################################
-## plot1.R creates a plot answering the Question 3 from the Course Project 2 of the course Exploratory Data Analysis
+## plot3.R creates a plot answering the Question 3 from the Course Project 2 of the course Exploratory Data Analysis
 ##
 ## Author: Gerd Reiss
 ##
